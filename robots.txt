@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/video-*.mp4
+
+Sitemap: https://sabervitalacademy.com/sitemap.xml
