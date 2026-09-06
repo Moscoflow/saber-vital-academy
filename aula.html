@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Mi Aula Virtual | Saber Vital Academy</title>
+  <meta name="description" content="Panel de estudiante y aula virtual de Saber Vital Academy. Accede a tus cursos del sector salud, módulos y certificaciones.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="canonical" href="https://sabervital.academy/aula.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Saber Vital Academy">
+  <meta property="og:title" content="Mi Aula Virtual | Saber Vital Academy">
+  <meta property="og:description" content="Accede a tus cursos y capacitaciones del sector salud con certificación oficial.">
+  <meta property="og:image" content="https://sabervital.academy/assets/course1.jpg">
+  <meta property="og:url" content="https://sabervital.academy/aula.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <script defer src="js/courses.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Formación y capacitación para el sector salud</span><span><strong>Saber Vital Academy</strong> · Aula Virtual</span></div></div>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Saber Vital Academy">
+        <span class="brand-copy"><strong>Saber Vital</strong><span>ACADEMY</span></span>
+      </a>
+      <nav class="navlinks">
+        <a href="index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="index.html#categorias">Categorías</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a class="active" href="aula.html">Mi Aula</a>
+      </nav>
+      <button class="mobile-menu" aria-label="Menú">☰</button>
+      <div class="nav-actions">
+        <a class="cart-btn" href="carrito.html" aria-label="Carrito">🛒<span class="cart-count">0</span></a>
+        <a class="btn btn-secondary btn-sm" href="login.html">Ingresar</a>
+        <a class="btn btn-primary btn-sm" href="registro.html">Crear cuenta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section" style="padding:40px 0 80px">
+    <div class="container" id="aulaApp">
+      <!-- Dynamic Classroom Rendered via JS -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="assets/logo.png" alt="Saber Vital Academy"><strong>Saber Vital Academy</strong></div>
+          <p>Plataforma de formación y capacitación para el sector salud hospitalario y asistencial en Colombia.</p>
+        </div>
+        <div>
+          <h4>Academia</h4>
+          <a href="cursos.html">Cursos</a>
+          <a href="index.html#categorias">Categorías</a>
+          <a href="aula.html">Mi Aula Virtual</a>
+        </div>
+        <div>
+          <h4>Cuenta</h4>
+          <a href="login.html">Iniciar sesión</a>
+          <a href="registro.html">Crear cuenta</a>
+          <a href="carrito.html">Carrito</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="privacidad.html">Privacidad</a>
+          <a href="terminos.html">Términos</a>
+          <a href="reembolsos.html">Reembolsos</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Saber Vital Academy</span>
+        <span>Saber Vital Academy · Colombia</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookieBanner" class="cookie-banner">
+    <div class="container cookie-inner">
+      <p>Usamos cookies y almacenamiento local para mejorar tu experiencia. Al continuar, aceptas nuestra <a href="privacidad.html">Política de Privacidad</a>.</p>
+      <button class="btn btn-primary btn-sm" onclick="acceptCookies()">Aceptar</button>
+    </div>
+  </div>
+</body>
+</html>

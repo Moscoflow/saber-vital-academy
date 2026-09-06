@@ -77,3 +77,70 @@ p{margin:0;color:var(--muted)}
 .forgot-link{display:block;text-align:center;margin-top:12px;font-size:.82rem;color:var(--blue-dark);font-weight:700}
 .legal-content{max-width:860px;margin:0 auto}.legal-content h2{font-size:1.65rem;margin:36px 0 14px;color:var(--blue-deep)}.legal-content h3{margin:24px 0 10px}.legal-content p,.legal-content li{color:var(--muted);line-height:1.7;margin-bottom:10px}.legal-content ul{padding-left:22px}.legal-content strong{color:var(--ink)}.legal-content .legal-updated{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
 @media(max-width:720px){.cookie-inner{flex-direction:column;text-align:center}}
+
+/* --- MODAL SYSTEM --- */
+.sva-modal-backdrop{position:fixed;inset:0;background:rgba(6,54,83,.7);backdrop-filter:blur(6px);z-index:999;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:.25s ease}
+.sva-modal-backdrop.active{opacity:1;pointer-events:auto}
+.sva-modal{background:#fff;border-radius:24px;width:min(580px,100%);max-height:90vh;overflow-y:auto;box-shadow:0 24px 60px rgba(0,0,0,.25);border:1px solid var(--line);position:relative;padding:32px;transform:scale(.95);transition:.25s ease}
+.sva-modal-backdrop.active .sva-modal{transform:scale(1)}
+.sva-modal-close{position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#fff;display:grid;place-items:center;font-size:1.2rem;cursor:pointer;color:var(--muted);transition:.2s}
+.sva-modal-close:hover{background:#f1f6f9;color:var(--blue-deep)}
+.modal-head{margin-bottom:20px}
+.modal-head h2{font-size:1.5rem;color:var(--blue-deep);margin-bottom:6px}
+.modal-head p{font-size:.88rem;color:var(--muted)}
+
+/* --- CHECKOUT STYLES --- */
+.payment-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
+.payment-tab{border:1px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center;cursor:pointer;font-weight:700;font-size:.82rem;color:var(--muted);background:#fff;transition:.2s}
+.payment-tab.active{border-color:var(--blue);background:#eef9fd;color:var(--blue-dark)}
+.payment-body{display:none}
+.payment-body.active{display:block}
+.checkout-summary{background:var(--soft);border-radius:16px;padding:16px;margin:20px 0;border:1px solid var(--line)}
+.checkout-summary-row{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:8px;color:var(--muted)}
+.checkout-summary-row.total{border-top:1px dashed #cbdce6;padding-top:10px;margin-top:10px;color:var(--blue-deep);font-size:1.1rem;font-weight:900}
+.secure-badge{display:flex;align-items:center;justify-content:center;gap:8px;font-size:.78rem;color:var(--green-dark);font-weight:800;margin-top:14px}
+
+/* --- VIDEO SHIELD --- */
+.video-wrap-shielded{position:relative;border-radius:20px;overflow:hidden;background:#000}
+.video-wrap-shielded video{width:100%;height:auto;display:block}
+.video-shield{position:absolute;inset:0;pointer-events:none;z-index:2}
+
+/* --- AULA VIRTUAL & STUDENT DASHBOARD --- */
+.student-banner{background:linear-gradient(135deg,var(--blue-deep),#094f78);color:#fff;border-radius:24px;padding:34px;margin-bottom:32px;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center}
+.student-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--green));display:grid;place-items:center;font-size:2rem;font-weight:900;color:#fff;border:3px solid rgba(255,255,255,.3)}
+.student-info h1{color:#fff;font-size:1.6rem;margin-bottom:6px}
+.student-info p{color:#cde5f2;font-size:.88rem}
+.student-stats{display:flex;gap:16px;background:rgba(255,255,255,.1);padding:14px 20px;border-radius:16px;backdrop-filter:blur(8px)}
+.student-stat{text-align:center}
+.student-stat strong{display:block;font-size:1.3rem;color:#fff}
+.student-stat span{font-size:.75rem;color:#c1dfee}
+
+.aula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.aula-card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.2s;display:flex;flex-direction:column}
+.aula-card:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+.aula-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.aula-card-body{padding:20px;flex:1;display:flex;flex-direction:column}
+.progress-bar-wrap{background:#e8f1f5;height:8px;border-radius:99px;margin:12px 0 16px;overflow:hidden}
+.progress-bar{height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:99px;transition:width .4s}
+
+.classroom-layout{display:grid;grid-template-columns:1fr 340px;gap:28px;align-items:start}
+.classroom-player{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow)}
+.classroom-nav-lessons{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}
+.lesson-list{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:8px}
+.lesson-item{padding:12px 14px;border-radius:12px;border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;font-size:.85rem;font-weight:700;color:#3b5668;transition:.2s}
+.lesson-item:hover{background:#f4f9fc;border-color:var(--blue)}
+.lesson-item.active{background:#e8f5fb;border-color:var(--blue);color:var(--blue-deep)}
+.lesson-item.completed{background:#effbf2;border-color:#bce5c6}
+.lesson-item.completed:before{content:"✓";color:var(--green-dark);font-weight:900}
+
+/* --- CERTIFICATE VIEW --- */
+.cert-modal-box{background:#fff;border:8px double var(--blue-deep);border-radius:16px;padding:40px;text-align:center;position:relative}
+.cert-watermark{position:absolute;inset:0;display:grid;place-items:center;opacity:.04;font-size:12rem;pointer-events:none;font-weight:900}
+.cert-modal-box h2{font-size:2.2rem;color:var(--blue-deep);letter-spacing:2px;text-transform:uppercase}
+.cert-name{font-size:1.8rem;color:var(--blue-dark);margin:16px 0;font-weight:900;text-decoration:underline}
+
+@media(max-width:900px){
+  .classroom-layout{grid-template-columns:1fr}
+  .student-banner{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .student-stats{justify-content:center}
+}
